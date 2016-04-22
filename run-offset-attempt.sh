@@ -2,7 +2,7 @@
 
 D=:0
 HOST=http://192.168.1.1:3000
-ARGS="--show-fps-counter --no-first-run --fullscreen --kiosk --no-default-browser-check"
+ARGS="--enable-low-end-device-mode --enable-gpu-rasterization --ignore-gpu-blacklist --disable-translate --show-fps-counter --no-first-run --fullscreen --kiosk --no-default-browser-check"
 
 ssh 192.168.1.33 "env DISPLAY=$D google-chrome $ARGS \"$HOST/?config=0,180,1440,900\"" &
 ssh 192.168.1.23 "env DISPLAY=$D google-chrome $ARGS \"$HOST/?config=0,1080,1440,900\"" &
