@@ -1,4 +1,5 @@
 #!/bin/sh
 
-./run_3x3.sh --playlist playlist.json &
+./start-server-3x3.sh --playlist ~/purple-dragons/playlist.json &
+sleep 3
 ./run.sh &
